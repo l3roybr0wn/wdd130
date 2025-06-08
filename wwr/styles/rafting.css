@@ -45,9 +45,14 @@ article {
     padding: 8px;
 }
 
+image {
+    width: 740px;
+    -ms-flex-align: center;
+    border: #412234 solid, 10px;
+}
+
 .socialmedia a {
     text-decoration: none;
-    -ms-flex-align: center;
     width: 50px;
 
 }
