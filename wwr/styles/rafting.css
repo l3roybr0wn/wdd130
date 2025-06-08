@@ -3,6 +3,7 @@
     --primary-color: #fe4a49;
     --accent1-color: #fed746;
     --accent2-color: #009fb7;
+    --background-color: #412234;
     --body-font: Georgia, sans-serif;
     --heading-font: "roboto", serif;
 }
@@ -16,7 +17,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
 }
 
 header,
@@ -64,8 +65,8 @@ article {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    background-color: var(--background-color);
+    color: #412234;
 }
 
 .hero article {
