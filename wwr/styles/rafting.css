@@ -34,6 +34,7 @@ h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     padding: 16px;
+    -ms-flex-align: center;
 }
 
 nav,
@@ -46,6 +47,9 @@ article {
 
 .socialmedia a {
     text-decoration: none;
+    -ms-flex-align: center;
+    width: 50px;
+
 }
 
 .hero {
