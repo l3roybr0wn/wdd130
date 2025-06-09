@@ -54,6 +54,7 @@ image {
 .socialmedia a {
     text-decoration: none;
     width: 50px;
+    height: auto;
 
 }
 
@@ -93,4 +94,41 @@ image {
     width: 125px;
     margin-left: 10px;
     border: 2px solid #412234;
+}
+
+.employee-container {
+    display: flex;
+    /* Use Flexbox */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line if needed */
+    margin: 20px 0;
+    /* Add margin around the container */
+}
+
+.employee {
+    text-align: center;
+    /* Center text within each employee block */
+    margin: 10px;
+    /* Add space around each employee */
+    padding: 15px;
+    /* Add padding inside each employee block */
+    border: 1px solid #ccc;
+    /* Optional: Add a border around each employee */
+    border-radius: 8px;
+    /* Optional: Round the corners */
+    background-color: #f9f9f9;
+    /* Optional: Background color for each employee */
+}
+
+.employee img {
+    width: 100px;
+    /* Set a fixed width for images */
+    height: 100px;
+    /* Set a fixed height for images */
+    border-radius: 50%;
+    /* Make images circular */
 }

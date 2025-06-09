@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Levi Rich">
+    <meta name="description" content="Contact Snake River Rafting Travel">
+    <title>Contact - Snake River Rafting Travel</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/raftlogo.jpg" alt="Snake River Rafting Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+
+        <section>
+            <h2>Meet Our Team</h2>
+            <div class="employee-container">
+                <div class="employee">
+                    <img src="employee1.jpg" alt="Employee 1">
+                    <h3>Jane Doe</h3>
+                    <p>Lead Guide</p>
+                </div>
+                <div class="employee">
+                    <img src="employee2.jpg" alt="Employee 2">
+                    <h3>John Smith</h3>
+                    <p>Trip Coordinator</p>
+                </div>
+                <div class="employee">
+                    <img src="employee3.jpg" alt="Employee 3">
+                    <h3>Sarah Jones</h3>
+                    <p>Office Manager</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact Us - Have questions?</h2>
+            <form action="submit.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label>Purpose of Message:</label>
+                <div>
+                    <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                    <label for="general">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="socialmedia">
+            <img src="images/fbicon.jpg" alt="Facebook Icon">
+            <img src="images/instaicon.jpg" alt="Instagram Icon">
+            <img src="images/twittericon.jpg" alt="Twitter Icon">
+        </div>
+    </footer>
+</body>
+
+</html>
