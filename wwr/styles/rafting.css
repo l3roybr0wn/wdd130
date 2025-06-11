@@ -31,6 +31,7 @@ footer {
 /* Style headings */
 h1,
 h2 {
+    display: flex;
     font-family: var(--heading-font);
     color: var(--primary-color);
     padding: 16px;
@@ -48,7 +49,7 @@ article {
 image {
     width: 740px;
     -ms-flex-align: center;
-    border: #412234 solid, 10px;
+    border: solid #412234 solid, 10px;
 }
 
 .socialmedia a {
