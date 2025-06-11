@@ -1,11 +1,11 @@
 /* rafting.css */
 :root {
-    --primary-color: #412234;
+    --primary-color: #d4c92a;
     --accent1-color: #000000;
     --accent2-color: #009fb7;
     --background-color: #b43f11;
     --body-font: Georgia, sans-serif;
-    --heading-font: "roboto", serif;
+    --heading-font: Georgia, serif;
 }
 
 * {
@@ -28,7 +28,7 @@ footer {
     background-color: #ada9b7;
 }
 
-/* Style headings */
+
 h1,
 h2 {
     display: flex;
@@ -46,17 +46,20 @@ article {
     padding: 8px;
 }
 
-image {
+
+img {
     width: 740px;
-    -ms-flex-align: center;
-    border: solid #412234 solid, 10px;
-}
+    display: block;
+    margin: 0 auto;
+    border: 10px solid #412234;
 
-.socialmedia a {
-    text-decoration: none;
-    width: 50px;
-    height: auto;
-
+    .socialmedia a {
+        display: flex;
+        width: 50px;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .hero {
@@ -99,37 +102,37 @@ image {
 
 .employee-container {
     display: flex;
-    /* Use Flexbox */
+
     justify-content: center;
-    /* Center items horizontally */
+
     align-items: center;
-    /* Center items vertically */
+
     flex-wrap: wrap;
-    /* Allow items to wrap to the next line if needed */
+
     margin: 20px 0;
-    /* Add margin around the container */
+
 }
 
 .employee {
     text-align: center;
-    /* Center text within each employee block */
+
     margin: 10px;
-    /* Add space around each employee */
+
     padding: 15px;
-    /* Add padding inside each employee block */
-    border: 1px solid #ccc;
-    /* Optional: Add a border around each employee */
+
+    border: 10px solid #ccc;
+
     border-radius: 8px;
-    /* Optional: Round the corners */
+
     background-color: #f9f9f9;
-    /* Optional: Background color for each employee */
+
 }
 
 .employee img {
-    width: 100px;
-    /* Set a fixed width for images */
-    height: 100px;
-    /* Set a fixed height for images */
+    width: 150px;
+
+    height: 150px;
+
     border-radius: 50%;
-    /* Make images circular */
+
 }
