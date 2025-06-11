@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Levi Rich">
+    <meta name="description" content="Welcome to Snake River Rafting Travel. Join us for unforgettable adventures!">
+    <title>Home - Snake River Rafting Travel</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/raftlogo.jpg" alt="Snake River Rafting Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/hero-image.jpg" alt="Hero Image" class="hero-image">
+            <h1 class="hero-heading">Experience the Thrill of White Water Rafting!</h1>
+        </section>
+
+        <!-- Newsletter Signup Form -->
+        <section class="newsletter">
+            <h2>Sign Up for Our Newsletter</h2>
+            <form action="submit_newsletter.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <input type="submit" value="Subscribe">
+            </form>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Ready for Adventure?</h2>
+            <p>Join us for an unforgettable rafting experience. Check out our trips!</p>
+            <a href="trips.html" class="cta-button">View Trips</a>
+        </section>
+
+        <!-- CSS Grid Layout -->
+        <section class="grid-layout">
+            <h2>Our Offerings</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="images/offer1.jpg" alt="Rafting Adventure">
+                    <h3>Guided Rafting Trips</h3>
+                    <p>Join our experienced guides for thrilling rafting adventures.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/offer2.jpg" alt="Safety Equipment">
+                    <h3>Safety First</h3>
+                    <p>We prioritize your safety with top-notch equipment and training.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/offer3.jpg" alt="Family Fun">
+                    <h3>Family-Friendly Options</h3>
+                    <p>We offer trips suitable for all ages and skill levels.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/offer4.jpg" alt="Eco-Friendly">
+                    <h3>Eco-Friendly Practices</h3>
+                    <p>We are committed to preserving the beauty of nature.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="socialmedia">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/fbicon.jpg" alt="Facebook Icon">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instaicon.jpg" alt="Instagram Icon">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="images/twittericon.jpg" alt="Twitter Icon">
+            </a>
+        </div>
+        <p>&copy; 2025 Snake River Rafting Travel. All rights reserved. <br>
+            <a href="images/trips-wireframe.png">View Trips Page Wireframe</a>
+        </p>
+    </footer>
+</body>
+
+</html>
