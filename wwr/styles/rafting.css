@@ -1,3 +1,6 @@
+/* ------------------------------------ */
+/*          GLOBAL STYLES               */
+/* ------------------------------------ */
 :root {
     --primary-color: #160C28;
     --secondary-color: #2CFDCD;
@@ -6,21 +9,6 @@
     --heading-font: "Rubik Dirt", system-ui;
     --body-font: "Nunito Sans", sans-serif;
 }
-
-header .header-container {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    margin: 1rem auto;
-    grid-template-columns: 840px 1fr 1fr;
-    max-width: 840px;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    font-size: large;
-}
-
 
 * {
     margin: 0;
@@ -34,18 +22,18 @@ body {
     font-weight: 600;
 }
 
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     font-weight: 400;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
 }
 
 nav,
@@ -54,68 +42,23 @@ section,
 article {
     margin: 4px;
     padding: 8px;
-    background-color: var(--secondary-color)
+    background-color: var(--secondary-color);
 }
 
-.hero article {
-    position: relative;
-    flex-wrap: wrap;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.hero {
-    position: relative;
-    width: 100%;
-    max-width: 840px;
-    margin: 0 auto;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
-}
-
-.hero-article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 16px;
-    border-radius: 8px;
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    flex-wrap: wrap;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.hero-article img {
-    width: 125px;
-    height: auto;
-    border-radius: 6px;
-}
-
-.hero-article p {
-    flex: 1 1 200px;
-    font-size: 0.95rem;
+/* ------------------------------------ */
+/*          HEADER / NAVIGATION         */
+/* ------------------------------------ */
+header .header-container {
+    background-color: var(--secondary-color);
     color: var(--primary-color);
-    margin: 0;
+    margin: 1rem auto;
+    max-width: 840px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: large;
 }
 
 .header-container img {
@@ -145,6 +88,100 @@ nav a:hover {
     color: var(--accent1-color);
 }
 
+/* ------------------------------------ */
+/*           HERO SECTION (home)        */
+/* ------------------------------------ */
+.hero {
+    position: relative;
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    width: 600px;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article {
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.hero-article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: var(--secondary-color);
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.hero-article img {
+    width: 125px;
+    height: auto;
+    border-radius: 6px;
+}
+
+.hero-article p {
+    flex: 1 1 200px;
+    font-size: 0.95rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.subhero {
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.subhero-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    justify-items: center;
+    align-items: start;
+}
+
+.subhero figure {
+    margin: 0;
+}
+
+.subhero img {
+    width: 300px;
+    height: auto;
+    border: none;
+    border-radius: 8px;
+}
+
+.subhero figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+}
+
+/* ------------------------------------ */
+/*        HOME PAGE: ADVENTURES         */
+/* ------------------------------------ */
 .adventures {
     display: flex;
     flex-wrap: wrap;
@@ -162,7 +199,6 @@ nav a:hover {
 
 .adventures figure {
     flex: 1 1 calc(20% - 16px);
-    /* Five images per row with spacing */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,47 +217,9 @@ nav a:hover {
     color: var(--primary-color);
 }
 
-footer {
-    background-color: var(--accent2-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px;
-    max-width: 840px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
-
-.footer-container {
-    max-width: 840px;
-    margin: 0 auto;
-    padding: 0 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-/* Footer text */
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-}
-
-footer .socialmedia {
-    display: flex;
-}
-
-footer .socialmedia img {
-    width: 50px;
-    height: 50px;
-    transition: transform 0.2s ease;
-}
-
-footer .socialmedia img:hover {
-    transform: scale(1.1);
-}
-
+/* ------------------------------------ */
+/*        ABOUT PAGE: EMPLOYEES         */
+/* ------------------------------------ */
 .employee-container {
     display: flex;
     gap: 20px;
@@ -246,11 +244,9 @@ footer .socialmedia img:hover {
     font-size: 0.9rem;
 }
 
-.iframe {
-    align-content: center;
-
-}
-
+/* ------------------------------------ */
+/*           CONTACT PAGE               */
+/* ------------------------------------ */
 .contact-form {
     max-width: 500px;
     margin: 0 auto;
@@ -274,7 +270,7 @@ footer .socialmedia img:hover {
 }
 
 .submit-button {
-    background-color: #2a72de;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     padding: 10px 16px;
@@ -284,20 +280,18 @@ footer .socialmedia img:hover {
 }
 
 .submit-button:hover {
-    background-color: #1a5ac9;
+    background-color: var(--accent2-color);
+    border: 1px dashed #160C28;
 }
 
+/* Map Embed Section */
 .map-container {
     width: 100%;
     max-width: 800px;
     aspect-ratio: 16 / 9;
-    /* Keep map proportional */
     border-radius: 12px;
-    /* Rounded corners */
     overflow: hidden;
-    /* Hide overflow if corners are rounded */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Drop shadow */
     margin: 0 auto;
 }
 
@@ -306,4 +300,84 @@ footer .socialmedia img:hover {
     height: 100%;
     border: none;
     align-content: center;
+}
+
+/* Subhero (if used on contact/about) */
+.subhero {
+    padding: 8px;
+}
+
+/* ------------------------------------ */
+/*                FOOTER                */
+/* ------------------------------------ */
+footer {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    max-width: 840px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer .socialmedia {
+    display: flex;
+}
+
+footer .socialmedia img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s ease;
+}
+
+footer .socialmedia img:hover {
+    transform: scale(1.1);
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* ------------------------------------ */
+/*                Table                 */
+/* ------------------------------------ */
+
+.trips-info {
+    font-size: 0.9em;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.trips-info thead tr {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: left;
+    font-weight: bold;
+}
+
+.trips-info th,
+.trips-info td {
+    padding: 12px 15px;
+}
+
+.packages-table h1 {
+    text-align: center;
 }
